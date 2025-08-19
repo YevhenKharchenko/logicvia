@@ -1,9 +1,7 @@
 .context-menu {
   display: none;
-  background: #151612;
-  border-bottom: 3px solid #ff6a00;
-  border-radius: 0 0 20px 20px;
-  padding: 36px 10px 64px 10px;
+  background: #181818;
+
   max-width: 375px;
   width: 100%;
   margin: 0 auto;
@@ -15,36 +13,67 @@
   z-index: 10;
 }
 
+.context-bg-wrapper {
+  padding-top: 30px;
+  padding-bottom: 135px;
+  background-image: url(../../img/menu/menu-bg-line.png),
+    url(../../img/menu/menu-bg-arrow.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 30px left, bottom 14px center;
+  background-size: auto;
+}
+
 .context-nav {
-  max-width: max-content;
+  max-width: 253px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 0;
 }
 
 .context-nav-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
 }
 
 .context-list-item {
-  padding: 8px 24px;
+  padding: 9px 4px;
+  width: 100%;
+  max-width: 253px;
+
+  &:nth-child(odd) {
+    border: 2px solid #00b4cc;
+    margin-bottom: 12px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .context-list-link {
+      color: #fff;
+    }
+  }
+
+  &:nth-child(even) {
+    background: linear-gradient(90deg, #00b4cc 0%, #fff 100%);
+    margin-bottom: 24px;
+
+    .context-list-link {
+      color: #181818;
+    }
+  }
 }
 
 .context-list-link {
-  padding: 8px 24px;
-  border: 1px solid #887159;
-  border-radius: 12px;
-  font-family: 'Roboto Mono', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  color: #fff;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:active {
-    box-shadow: 0 4px 7px 0 rgba(255, 255, 255, 0.1);
-    background: rgba(255, 106, 0, 0.5);
   }
 }
 
