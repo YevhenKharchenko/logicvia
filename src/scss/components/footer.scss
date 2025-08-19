@@ -1,0 +1,139 @@
+.footer {
+  @include media(desktop) {
+  }
+}
+
+.footer-bg-wrapper {
+  padding-top: 56px;
+  padding-bottom: 18px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/footer/footer-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
+
+  @include media(desktop) {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    max-width: 1440px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../img/footer/footer-bg-desk.jpg);
+  }
+}
+
+.footer-container {
+}
+
+.footer-content-wrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer-top-link-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 56px;
+
+  @include media(desktop) {
+    list-style-type: disc;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0;
+    order: 3;
+  }
+}
+
+.footer-top-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ebebeb;
+
+  @include media(desktop) {
+    font-weight: 500;
+  }
+}
+
+.footer-link-span {
+  font-weight: 500;
+}
+
+.footer-br {
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.footer-nav {
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    margin-bottom: 0;
+    order: 2;
+  }
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+  }
+}
+
+.footer-list-item {
+}
+
+.footer-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
+
+.footer-span {
+  display: none;
+
+  @include media(desktop) {
+    display: inline;
+  }
+}
+
+.footer-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #ebebeb;
+  max-width: 264px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    max-width: max-content;
+    margin: 0;
+    order: 1;
+  }
+}

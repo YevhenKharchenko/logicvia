@@ -1,0 +1,116 @@
+.features-section {
+}
+
+.features-bg-wrapper {
+  padding-top: 56px;
+  padding-bottom: 82px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 56px;
+    padding-bottom: 143px;
+    max-width: 1440px;
+  }
+}
+
+.features-container {
+}
+
+.features-title {
+  max-width: 198px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: max-content;
+  }
+}
+
+.features-content-wrapper {
+  @include media(desktop) {
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.features-top-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    max-width: 628px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 42px;
+  }
+}
+
+.games-subtitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 44px;
+
+  @include media(desktop) {
+    font-size: 22px;
+    margin-bottom: 42px;
+  }
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    gap: 0;
+  }
+}
+
+.features-list-item {
+  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  @include media(desktop) {
+    max-width: 652px;
+  }
+}
+
+.features-img {
+  min-width: 80px;
+}
+
+.features-item-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
+
+.features-item-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}

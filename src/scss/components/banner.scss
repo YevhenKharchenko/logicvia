@@ -1,0 +1,111 @@
+.cookie-banner-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/banner/banner-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
+  width: 100%;
+  max-width: 375px;
+  padding: 40px 16px;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: none;
+  z-index: 100;
+  display: none;
+
+  @include media(desktop) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../img/banner/banner-bg-desk.png);
+    background-size: cover;
+
+    max-width: 1440px;
+  }
+}
+
+.cookie-banner-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.cookie-banner-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  max-width: 313px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+
+  @include media(desktop) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    max-width: max-content;
+    margin-bottom: 39px;
+  }
+}
+
+.cookie-banner-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+.cookie-decline-btn {
+  border: 3px solid #ff6a00;
+  border-radius: 12px;
+  padding: 16px 32px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    max-width: 302px;
+    height: 51px;
+  }
+}
+
+.cookie-accept-btn {
+  background: #ff6a00;
+  border-radius: 12px;
+  padding: 16px 32px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    max-width: 302px;
+    height: 51px;
+  }
+}
+
+.show-cookie-banner {
+  display: block;
+
+  @include media(desktop) {
+  }
+}

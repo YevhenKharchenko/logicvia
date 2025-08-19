@@ -1,0 +1,155 @@
+.about-section {
+}
+
+.about-section-wrapper {
+  padding-top: 56px;
+  padding-bottom: 96px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-top: 56px;
+    padding-bottom: 148px;
+    max-width: 1440px;
+  }
+}
+
+.about-title {
+}
+
+.about-top-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 32px;
+
+  &:nth-child(2) {
+    margin-bottom: 16px;
+  }
+
+  @include media(desktop) {
+    max-width: 628px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:nth-child(2) {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.about-subtitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    font-size: 22px;
+    max-width: 628px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 56px;
+  }
+}
+
+.about-swiper-container {
+  max-width: 343px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.about-swiper-container.show {
+  visibility: visible;
+}
+
+.about-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+.about-slide {
+  box-shadow: 6px 4px 5px 0 #ff6a00;
+  background: rgba(255, 106, 0, 0.3);
+  opacity: 0.9;
+  border-radius: 20px;
+  padding: 24px;
+  max-width: 343px;
+  min-height: 180px;
+  display: flex !important;
+  justify-content: center;
+  align-items: start;
+  gap: 24px;
+
+  @include media(desktop) {
+    width: 326px;
+    max-width: 326px;
+  }
+}
+
+.about-img {
+  min-width: 84px;
+}
+
+.about-slide-text-wrapper {
+  max-width: 170px;
+}
+
+.about-slide-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 12px;
+
+  @include media(desktop) {
+  }
+}
+
+.about-slide-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 40px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.about-dot {
+  width: 12px;
+  height: 12px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 100%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.about-dot.active {
+  background-color: #ff6a00;
+}

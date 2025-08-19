@@ -1,0 +1,110 @@
+.header {
+  padding: 8px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background-image: url(../img/hero/hero-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
+
+  @include media(desktop) {
+    padding: 20px 0;
+    background-image: url(../img/hero/hero-bg-desk.jpg);
+    background-position: top center;
+  }
+}
+
+.header-container {
+  @include media(desktop) {
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include media(desktop) {
+    justify-content: center;
+  }
+}
+
+.header-logo-link {
+  background: #ff6a00;
+  border-radius: 8px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.nav-list {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.nav-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list-link {
+  @include media(desktop) {
+    border: 1px solid #887159;
+    border-radius: 12px;
+    padding: 8px 24px;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+
+    &:hover,
+    &:active,
+    &.active {
+      box-shadow: 0 4px 7px 0 rgba(255, 255, 255, 0.1);
+      background: rgba(255, 106, 0, 0.5);
+    }
+  }
+}
+
+.nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.close-btn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
