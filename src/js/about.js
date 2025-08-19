@@ -21,7 +21,7 @@ aboutSwiper = new Swiper('.about-swiper-container', {
   },
   breakpoints: {
     1440: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       grabCursor: false,
       allowTouchMove: false,
       spaceBetween: 0,
