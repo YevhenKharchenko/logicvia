@@ -4,5 +4,6 @@ import './js/games.js';
 import './js/process.js';
 import './js/features.js';
 import './js/team.js';
+import './js/testimonials.js';
 import './js/faq.js';
 import './js/banner.js';
