@@ -13,10 +13,10 @@
     padding-top: 48px;
     padding-bottom: 48px;
     max-width: 1440px;
-    background-image: url(../../img/process/process-bg-top-line-desk.png),
-      url(../../img/process/process-bg-bottom-line-desk.png),
-      url(../../img/process/process-bg-top-line-desk.png),
-      url(../../img/process/process-bg-bottom-line-desk.png);
+    background-image: url(../img/process/process-bg-top-line-desk.png),
+      url(../img/process/process-bg-bottom-line-desk.png),
+      url(../img/process/process-bg-top-line-desk.png),
+      url(../img/process/process-bg-bottom-line-desk.png);
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: top 83px left, bottom 84px left, top 83px right,
       bottom 84px right;
@@ -74,25 +74,25 @@
     padding-top: 76px;
     max-width: 414px;
     min-height: 438px;
-    background-image: url(../../img/process/process-slide-1-lines-desk.png);
+    background-image: url(../img/process/process-slide-1-lines-desk.png);
     background-repeat: no-repeat;
     background-position: top right;
     background-size: auto;
 
     &:nth-child(2) {
-      background-image: url(../../img/process/process-slide-2-lines-desk.png);
+      background-image: url(../img/process/process-slide-2-lines-desk.png);
     }
 
     &:nth-child(3) {
-      background-image: url(../../img/process/process-slide-3-lines-desk.png);
+      background-image: url(../img/process/process-slide-3-lines-desk.png);
     }
 
     &:nth-child(4) {
-      background-image: url(../../img/process/process-slide-4-lines-desk.png);
+      background-image: url(../img/process/process-slide-4-lines-desk.png);
     }
 
     &:nth-child(5) {
-      background-image: url(../../img/process/process-slide-5-lines-desk.png);
+      background-image: url(../img/process/process-slide-5-lines-desk.png);
     }
   }
 }
@@ -188,7 +188,7 @@
 
   &[disabled] {
     opacity: 0;
-    cursor: not-allowed;
+    pointer-events: none;
 
     &:hover {
       transform: none;

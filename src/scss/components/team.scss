@@ -1,0 +1,194 @@
+.team-section {
+}
+
+.team-section-wrapper {
+  padding-top: 32px;
+  padding-bottom: 16px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    max-width: 1440px;
+    background-image: url(../img/team/team-bg-top-line-desk.png),
+      url(../img/team/team-bg-middle-line-desk.png),
+      url(../img/team/team-bg-bottom-line-desk.png),
+      url(../img/team/team-bg-top-line-desk.png),
+      url(../img/team/team-bg-middle-line-desk.png),
+      url(../img/team/team-bg-bottom-line-desk.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+      no-repeat;
+    background-position: top 72px left, bottom 268px left, bottom 24px left,
+      top 72px right, bottom 268px right, bottom 24px right;
+    background-size: auto, auto, auto, auto, auto, auto;
+  }
+}
+
+.team-top-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    text-align: center;
+    max-width: 872px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+  }
+}
+
+.team-swiper-container {
+  max-width: 343px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1144px;
+  }
+}
+
+.team-swiper-container.show {
+  visibility: visible;
+}
+
+.team-swiper-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.team-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 16px;
+    width: 100%;
+  }
+}
+
+.team-slide {
+  max-width: 343px;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+
+  @include media(desktop) {
+    max-width: 563px;
+    min-width: 563px;
+    flex-direction: row;
+    position: relative;
+  }
+}
+
+.team-avatar-img {
+  @include media(desktop) {
+    position: absolute;
+    top: 49px;
+    left: 0;
+  }
+}
+
+.team-slide-text-wrapper {
+  padding-top: 43px;
+  background-image: url(../img/team/team-top-contour-mob.png),
+    url(../img/team/team-bottom-contour-mob.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, bottom center;
+  background-size: auto, auto;
+  min-height: 237px;
+
+  @include media(desktop) {
+    background-image: url(../img/team/team-top-contour-desk.png),
+      url(../img/team/team-bottom-contour-1-desk.png);
+    background-position: top right 32px, bottom right;
+    min-height: 334px;
+    min-width: 327px;
+    margin-left: auto;
+
+    &:nth-child(2) {
+      background-image: url(../img/team/team-top-contour-desk.png),
+        url(../img/team/team-bottom-contour-2-desk.png);
+      background-position: top right 32px, bottom right;
+      min-height: 334px;
+      min-width: 327px;
+    }
+  }
+}
+
+.team-slide-title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.team-slide-top-title {
+  background: #00b4cc;
+  padding: 6px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #181818;
+
+  @include media(desktop) {
+    font-size: 24px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
+
+.team-slide-bottom-title {
+  border: 1px solid #00b4cc;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 24px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
+
+.team-slide-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  max-width: 245px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    font-size: 20px;
+    max-width: 240px;
+  }
+}
+
+.team-dot {
+  width: 20px;
+  height: 3px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 50px;
+  background-color: #00b4cc;
+  cursor: pointer;
+}
+
+.team-dot.active {
+  width: 36px;
+  height: 5px;
+}

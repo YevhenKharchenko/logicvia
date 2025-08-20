@@ -1,116 +1,126 @@
 .features-section {
 }
 
-.features-bg-wrapper {
-  padding-top: 56px;
-  padding-bottom: 82px;
+.features-section-wrapper {
+  padding-top: 32px;
+  padding-bottom: 16px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 
   @include media(desktop) {
-    padding-top: 56px;
-    padding-bottom: 143px;
+    padding-top: 48px;
+    padding-bottom: 48px;
     max-width: 1440px;
-  }
-}
-
-.features-container {
-}
-
-.features-title {
-  max-width: 198px;
-  margin-left: auto;
-  margin-right: auto;
-
-  @include media(desktop) {
-    max-width: max-content;
-  }
-}
-
-.features-content-wrapper {
-  @include media(desktop) {
-    max-width: max-content;
-    margin-left: auto;
-    margin-right: auto;
+    background-image: url(../img/features/features-bg-line-desk.png),
+      url(../img/features/features-bg-line-desk.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 72px left, top 72px right;
+    background-size: auto, auto;
   }
 }
 
 .features-top-text {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 
   @include media(desktop) {
-    max-width: 628px;
+    font-size: 24px;
+    text-align: center;
+    max-width: 872px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 42px;
+    margin-bottom: 35px;
   }
 }
 
-.games-subtitle {
-  font-family: 'Bebas Neue', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 44px;
-
-  @include media(desktop) {
-    font-size: 22px;
-    margin-bottom: 42px;
-  }
-}
-
-.features-list {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 16px;
-  max-width: max-content;
+.features-swiper-container {
+  max-width: 343px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
-    gap: 0;
+    max-width: 1206px;
   }
 }
 
-.features-list-item {
-  padding: 8px 0;
-  display: flex;
-  justify-content: center;
+.features-swiper-container.show {
+  visibility: visible;
+}
+
+.features-swiper-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.features-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 40px;
+    width: 100%;
+  }
+}
+
+.features-slide {
+  max-width: 343px;
+  display: flex !important;
+  flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
 
   @include media(desktop) {
-    max-width: 652px;
+    max-width: 209px;
   }
 }
 
-.features-img {
-  min-width: 80px;
+.features-arrows {
 }
 
-.features-item-title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  color: #fff;
+.features-slide-title {
+  background: linear-gradient(90deg, #00b4cc 0%, #fff 100%);
+  border-radius: 4px;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #181818;
+  width: 100%;
 
   @include media(desktop) {
+    font-size: 24px;
   }
 }
 
-.features-item-text {
-  font-family: 'Montserrat', sans-serif;
+.features-slide-text {
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
+  text-align: center;
   color: #fff;
 
   @include media(desktop) {
+    font-size: 20px;
+    max-width: 185px;
   }
+}
+
+.features-dot {
+  width: 20px;
+  height: 3px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 50px;
+  background-color: #00b4cc;
+  cursor: pointer;
+}
+
+.features-dot.active {
+  width: 36px;
+  height: 5px;
 }
