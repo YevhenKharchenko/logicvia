@@ -50,16 +50,68 @@ html {
   }
 }
 
-.section-title {
+.section-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+}
+
+.section-title-text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #00b4cc;
+  padding: 2px;
+
+  @include media(desktop) {
+  }
+}
+
+.section-title-arrow {
+  min-width: 28px;
+  min-height: 62px;
+
+  @include media(desktop) {
+    min-width: 37px;
+    min-height: 86px;
+  }
+}
+
+.section-top-title {
+  background: linear-gradient(90deg, #00b4cc 0%, #fff 100%);
+  padding: 9px 11px;
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;
   font-size: 24px;
-  text-transform: uppercase;
-  color: #fff;
   text-align: center;
-  margin-bottom: 42px;
+  color: #181818;
 
   @include media(desktop) {
-    font-size: 32px;
+    font-size: 48px;
   }
+}
+
+.section-bottom-title {
+  padding: 9px 11px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 48px;
+  }
+}
+
+.secondary-arrow {
+  min-width: 32px;
+  min-height: 40px;
 }
