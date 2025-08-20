@@ -199,35 +199,3 @@
   width: 36px;
   height: 5px;
 }
-
-.controls {
-  display: none;
-
-  @include media(desktop) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 44px;
-    margin-top: 20px;
-  }
-}
-
-.arrow-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.3s ease-in-out;
-
-  &:active {
-    transform: scale(0.9);
-  }
-
-  &[disabled] {
-    opacity: 0.5;
-    cursor: not-allowed;
-
-    &:hover {
-      transform: none;
-    }
-  }
-}

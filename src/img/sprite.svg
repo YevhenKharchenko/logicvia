@@ -39,5 +39,11 @@
       <path fill="none" stroke="#00b4cc" stroke-linecap="round" stroke-width="1.422" d="M.884 19.239 7.462 25.9l6.6-6.661" style="stroke:var(--color1, #00b4cc)"/>
       <path fill="none" stroke="#00b4cc" stroke-linecap="round" stroke-width="1.422" d="m.884 24.306 6.578 6.661 6.6-6.661" style="stroke:var(--color1, #00b4cc)"/>
     </symbol>
+    <symbol id="icon-left-arrow" viewBox="0 0 24 40">
+      <path d="M21.5488 38L3.54883 20.0305L21.5488 2" stroke="#00B4CC" stroke-width="4" stroke-linecap="round" />
+    </symbol>
+    <symbol id="icon-right-arrow" viewBox="0 0 24 40">
+      <path d="M2.54895 38L20.549 20.0305L2.54895 2" stroke="#00B4CC" stroke-width="4" stroke-linecap="round" />
+    </symbol>
   </defs>
 </svg>

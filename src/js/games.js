@@ -2,8 +2,6 @@ import Swiper from 'swiper';
 import 'swiper/css/bundle';
 
 const gamesDots = document.querySelectorAll('.games-dot');
-const gamesLeftArrow = document.getElementById('gamesLeftArrow');
-const gamesRightArrow = document.getElementById('gamesRightArrow');
 
 let gamesSwiper;
 
@@ -35,7 +33,6 @@ gamesSwiper = new Swiper('.games-swiper-container', {
     },
     slideChange: function () {
       updateGamesDots(this.realIndex);
-      updateGamesArrows(this);
     },
   },
 });
@@ -50,19 +47,4 @@ gamesDots.forEach((dot, index) => {
   dot.addEventListener('click', () => {
     gamesSwiper.slideTo(index);
   });
-});
-
-updateGamesArrows(gamesSwiper);
-
-function updateGamesArrows(swiper) {
-  gamesLeftArrow.disabled = swiper.isBeginning;
-  gamesRightArrow.disabled = swiper.isEnd;
-}
-
-gamesLeftArrow.addEventListener('click', () => {
-  gamesSwiper.slidePrev();
-});
-
-gamesRightArrow.addEventListener('click', () => {
-  gamesSwiper.slideNext();
 });
