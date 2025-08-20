@@ -11,13 +11,32 @@
 
   @include media(desktop) {
     padding-top: 48px;
-    padding-bottom: 48px;
+    padding-bottom: 100px;
     max-width: 1440px;
     background-image: url(../img/faq/faq-bg-line-desk.png),
       url(../img/faq/faq-bg-line-desk.png);
     background-repeat: no-repeat, no-repeat;
     background-position: top 72px left, top 72px right;
     background-size: auto, auto;
+  }
+}
+
+.faq-title-text-wrapper {
+  flex-direction: column;
+  width: 100%;
+  max-width: 231px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    max-width: max-content;
+  }
+}
+
+.faq-top-title {
+  width: 100%;
+
+  @include media(desktop) {
+    width: max-content;
   }
 }
 
@@ -44,7 +63,7 @@
   margin-right: auto;
 
   @include media(desktop) {
-    max-width: 1206px;
+    max-width: 1181px;
   }
 }
 
@@ -54,20 +73,12 @@
 
 .faq-swiper-wrapper {
   @include media(desktop) {
-  }
-}
-
-.faq-swiper-wrapper {
-  @include media(desktop) {
     display: flex;
     justify-content: center;
     align-items: start;
-    gap: 40px;
+    gap: 17px;
     width: 100%;
   }
-}
-
-.faq-slide {
 }
 
 .faq-list-item {
@@ -75,12 +86,11 @@
   display: flex !important;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 
   @include media(desktop) {
-    max-width: 209px;
+    max-width: 222px;
   }
 }
 
@@ -91,36 +101,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
-}
-
-.faq-toggle-symbol {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.3s ease-in-out;
+  gap: 20px;
+  width: 100%;
 }
 
 .faq-btn-text {
   background: linear-gradient(90deg, #00b4cc 0%, #fff 100%);
   border-radius: 4px;
-  padding: 10px;
+  padding: 24px 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   color: #181818;
   width: 100%;
+  min-height: 104px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @include media(desktop) {
-    font-size: 24px;
+    padding: 10px 7px;
   }
 }
 
 .faq-bottom-text {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
   color: #fff;
   max-height: 0;
@@ -129,8 +137,9 @@
   opacity: 0;
 
   @include media(desktop) {
-    font-size: 20px;
-    max-width: 185px;
+    max-width: 207px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -149,12 +158,11 @@
 }
 
 .is-visible {
-  margin-top: 8px;
+  margin-top: 20px;
   max-height: 500px;
   opacity: 1;
 
   @include media(desktop) {
-    max-height: 100px;
   }
 }
 
