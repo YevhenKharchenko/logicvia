@@ -26,11 +26,12 @@
     max-width: 1440px;
     background-image: url(../img/hero/hero-bg-desk.png),
       url(../img/hero/hero-left-lines-desk.png),
-      url(../img/hero/hero-bg-line-desk.png);
-    background-repeat: no-repeat, no-repeat, no-repeat;
+      url(../img/hero/hero-bg-line-desk.png),
+      url(../img/hero/hero-contours-desk.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: top 200px right 95px, bottom 33px left 30px,
-      bottom 48px right;
-    background-size: auto, auto, auto;
+      bottom 48px right, top 105px right 45px;
+    background-size: auto, auto, auto, auto;
   }
 }
 

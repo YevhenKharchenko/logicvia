@@ -65,6 +65,8 @@
 
   @include media(desktop) {
     max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

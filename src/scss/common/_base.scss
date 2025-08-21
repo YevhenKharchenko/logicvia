@@ -43,10 +43,10 @@ html {
 }
 
 .section {
-  scroll-margin-top: 40px;
+  scroll-margin-top: 60px;
 
   @include media(desktop) {
-    scroll-margin-top: 70px;
+    scroll-margin-top: 100px;
   }
 }
 

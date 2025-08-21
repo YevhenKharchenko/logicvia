@@ -104,6 +104,7 @@
   background-position: top center, bottom center;
   background-size: auto, auto;
   min-height: 237px;
+  width: 100%;
 
   @include media(desktop) {
     background-image: url(../img/team/team-top-contour-desk.png),
@@ -112,6 +113,7 @@
     min-height: 334px;
     min-width: 327px;
     margin-left: auto;
+    width: max-content;
 
     &:nth-child(2) {
       background-image: url(../img/team/team-top-contour-desk.png),

@@ -16,11 +16,12 @@
     background-image: url(../img/games/games-bg-top-line-desk.png),
       url(../img/games/games-bg-bottom-line-desk.png),
       url(../img/games/games-bg-top-line-desk.png),
-      url(../img/games/games-bg-bottom-line-desk.png);
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+      url(../img/games/games-bg-bottom-line-desk.png),
+      url(../img/games/games-contours-desk.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: top 83px left, bottom 84px left, top 83px right,
-      bottom 84px right;
-    background-size: auto, auto, auto, auto;
+      bottom 84px right, top 313px center;
+    background-size: auto, auto, auto, auto, auto;
   }
 }
 

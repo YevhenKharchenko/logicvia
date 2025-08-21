@@ -117,8 +117,8 @@
     position: relative;
 
     &:hover,
-    &:active,
     &.active {
+      color: #fff;
     }
   }
 }
